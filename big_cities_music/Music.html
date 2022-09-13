@@ -3,7 +3,7 @@
 <head><meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>Music</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
+<title>C:\Users\1</title><script src="https://cdnjs.cloudflare.com/ajax/libs/require.js/2.1.10/require.min.js"></script>
 
 
 
@@ -14595,17 +14595,18 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <li>Москва — мегаполис, подчинённый жёсткому ритму рабочей недели;</li>
 <li>Петербург — культурная столица, со своими вкусами.</li>
 </ul>
-<p>На данных Яндекс Музыки вы сравните поведение пользователей двух столиц.</p>
-<p><strong>Цель исследования</strong> — проверьте три гипотезы:</p>
+<p>На данных Яндекс Музыки сравнивается поведение пользователей двух столиц.</p>
+<p><strong>Цель исследования</strong> — проверить три гипотезы:</p>
 <ol>
 <li>Активность пользователей зависит от дня недели. Причём в Москве и Петербурге это проявляется по-разному.</li>
 <li>В понедельник утром в Москве преобладают одни жанры, а в Петербурге — другие. Так же и вечером пятницы преобладают разные жанры — в зависимости от города. </li>
 <li>Москва и Петербург предпочитают разные жанры музыки. В Москве чаще слушают поп-музыку, в Петербурге — русский рэп.</li>
 </ol>
 <p><strong>Ход исследования</strong></p>
-<p>Данные о поведении пользователей вы получите из файла <code>yandex_music_project.csv</code>. О качестве данных ничего не известно. Поэтому перед проверкой гипотез понадобится обзор данных.</p>
-<p>Вы проверите данные на ошибки и оцените их влияние на исследование. Затем, на этапе предобработки вы поищете возможность исправить самые критичные ошибки данных.</p>
-<p>Таким образом, исследование пройдёт в три этапа:</p>
+<p>Данные о поведении пользователей получены из файла <code>yandex_music_project.csv</code>. О качестве данных ничего не известно. Поэтому перед проверкой гипотез понадобится обзор данных.</p>
+<p>Данные проверяются на ошибки и оценивается их влияние на исследование. 
+Затем, на этапе предобработки осуществляется поиск возможностей исправить самые критичные ошибки данных.</p>
+<p>Таким образом, исследование состоит из трех этапов:</p>
 <ol>
 <li>Обзор данных.</li>
 <li>Предобработка данных.</li>
@@ -14622,7 +14623,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%D0%9E%D0%B1%D0%B7%D0%BE%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#1054;&#1073;&#1079;&#1086;&#1088; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;<a class="anchor-link" href="#%D0%9E%D0%B1%D0%B7%D0%BE%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#182;</a></h2><p>Составьте первое представление о данных Яндекс Музыки.</p>
+<h2 id="%D0%9E%D0%B1%D0%B7%D0%BE%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#1054;&#1073;&#1079;&#1086;&#1088; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;<a class="anchor-link" href="#%D0%9E%D0%B1%D0%B7%D0%BE%D1%80-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#182;</a></h2><p>Первое представление о данных Яндекс Музыки.</p>
 
 </div>
 </div>
@@ -14634,8 +14635,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 1</strong></p>
-<p>Основной инструмент аналитика — <code>pandas</code>. Импортируйте эту библиотеку.</p>
+<p>В исследовании используются средства библиотеки <code>pandas</code>.</p>
 
 </div>
 </div>
@@ -14663,8 +14663,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 2</strong></p>
-<p>Прочитайте файл <code>yandex_music_project.csv</code> из папки <code>/datasets</code> и сохраните его в переменной <code>df</code>:</p>
+<p>Данные получены в виде файла с расширением .csv</p>
 
 </div>
 </div>
@@ -14674,10 +14673,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[46]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[2]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;D:\Jupiter\yandex_music_project.csv&#39;</span><span class="p">)</span> <span class="c1"># чтение файла с данными и сохранение в df</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">read_csv</span><span class="p">(</span><span class="s1">&#39;yandex_music_project.csv&#39;</span><span class="p">)</span> <span class="c1"># чтение файла с данными и сохранение в df</span>
 </pre></div>
 
      </div>
@@ -14692,8 +14691,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 3</strong></p>
-<p>Выведите на экран первые десять строк таблицы:</p>
+<p>Для общего представления о полученных данных осуществляется вывод первых 10-ти строк таблицы:</p>
 
 </div>
 </div>
@@ -14703,10 +14701,10 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[43]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[3]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="c1"># получение первых 10 строк таблицы df </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">display</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">head</span><span class="p">(</span><span class="mi">10</span><span class="p">))</span> <span class="c1"># получение первых 10 строк таблицы df </span>
 </pre></div>
 
      </div>
@@ -14727,32 +14725,141 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>     userID                        Track            artist   genre  \
-0  FFB692EC            Kamigata To Boots  The Mass Missile    rock   
-1  55204538  Delayed Because of Accident  Andreas Rönnberg    rock   
-2    20EC38            Funiculì funiculà       Mario Lanza     pop   
-3  A3DD03C9        Dragons in the Sunset        Fire + Ice    folk   
-4  E2DC1FAE                  Soul People        Space Echo   dance   
-5  842029A1                    Преданная         IMPERVTOR  rusrap   
-6  4CB90AA5                         True      Roman Messer   dance   
-7  F03E1C1F             Feeling This Way   Polina Griffith   dance   
-8  8FA1D3BE     И вновь продолжается бой               NaN  ruspop   
-9  E772D5C0                    Pessimist               NaN   dance   
 
-             City        time        Day  
-0  Saint-Petersburg  20:28:33  Wednesday  
-1            Moscow  14:07:09     Friday  
-2  Saint-Petersburg  20:58:07  Wednesday  
-3  Saint-Petersburg  08:37:09     Monday  
-4            Moscow  08:34:34     Monday  
-5  Saint-Petersburg  13:09:41     Friday  
-6            Moscow  13:00:07  Wednesday  
-7            Moscow  20:47:49  Wednesday  
-8            Moscow  09:17:40     Friday  
-9  Saint-Petersburg  21:20:49  Wednesday  
-</pre>
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>userID</th>
+      <th>Track</th>
+      <th>artist</th>
+      <th>genre</th>
+      <th>City</th>
+      <th>time</th>
+      <th>Day</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>FFB692EC</td>
+      <td>Kamigata To Boots</td>
+      <td>The Mass Missile</td>
+      <td>rock</td>
+      <td>Saint-Petersburg</td>
+      <td>20:28:33</td>
+      <td>Wednesday</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>55204538</td>
+      <td>Delayed Because of Accident</td>
+      <td>Andreas Rönnberg</td>
+      <td>rock</td>
+      <td>Moscow</td>
+      <td>14:07:09</td>
+      <td>Friday</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>20EC38</td>
+      <td>Funiculì funiculà</td>
+      <td>Mario Lanza</td>
+      <td>pop</td>
+      <td>Saint-Petersburg</td>
+      <td>20:58:07</td>
+      <td>Wednesday</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>A3DD03C9</td>
+      <td>Dragons in the Sunset</td>
+      <td>Fire + Ice</td>
+      <td>folk</td>
+      <td>Saint-Petersburg</td>
+      <td>08:37:09</td>
+      <td>Monday</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>E2DC1FAE</td>
+      <td>Soul People</td>
+      <td>Space Echo</td>
+      <td>dance</td>
+      <td>Moscow</td>
+      <td>08:34:34</td>
+      <td>Monday</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>842029A1</td>
+      <td>Преданная</td>
+      <td>IMPERVTOR</td>
+      <td>rusrap</td>
+      <td>Saint-Petersburg</td>
+      <td>13:09:41</td>
+      <td>Friday</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>4CB90AA5</td>
+      <td>True</td>
+      <td>Roman Messer</td>
+      <td>dance</td>
+      <td>Moscow</td>
+      <td>13:00:07</td>
+      <td>Wednesday</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>F03E1C1F</td>
+      <td>Feeling This Way</td>
+      <td>Polina Griffith</td>
+      <td>dance</td>
+      <td>Moscow</td>
+      <td>20:47:49</td>
+      <td>Wednesday</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>8FA1D3BE</td>
+      <td>И вновь продолжается бой</td>
+      <td>NaN</td>
+      <td>ruspop</td>
+      <td>Moscow</td>
+      <td>09:17:40</td>
+      <td>Friday</td>
+    </tr>
+    <tr>
+      <th>9</th>
+      <td>E772D5C0</td>
+      <td>Pessimist</td>
+      <td>NaN</td>
+      <td>dance</td>
+      <td>Saint-Petersburg</td>
+      <td>21:20:49</td>
+      <td>Wednesday</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -14766,8 +14873,7 @@ body[data-format='mobile'] .jp-OutputArea-child .jp-OutputArea-output {
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 4</strong></p>
-<p>Одной командой получить общую информацию о таблице c помощью метода <code>info()</code>:</p>
+<p>Также оценивается общая информация о таблице:</p>
 
 </div>
 </div>
@@ -14854,34 +14960,16 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 5</strong></p>
-<p><strong>Вопрос со свободной формой ответа</strong></p>
 <p>В названиях колонок видны нарушения стиля:</p>
 <ul>
 <li>Строчные буквы сочетаются с прописными.</li>
 <li>Встречаются пробелы.</li>
+<li>Встречается стиль написания "camelcase"</li>
 </ul>
-<p>Какое третье нарушение?</p>
 
 </div>
 </div>
 </div>
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># встречается стиль написания &quot;camelcase&quot;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
 </div>
 <div class="jp-Cell jp-MarkdownCell jp-Notebook-cell">
 <div class="jp-Cell-inputWrapper">
@@ -14904,7 +14992,7 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h2 id="%D0%9F%D1%80%D0%B5%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#1055;&#1088;&#1077;&#1076;&#1086;&#1073;&#1088;&#1072;&#1073;&#1086;&#1090;&#1082;&#1072; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;<a class="anchor-link" href="#%D0%9F%D1%80%D0%B5%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#182;</a></h2><p>Исправьте стиль в заголовках столбцов, исключите пропуски. Затем проверьте данные на дубликаты.</p>
+<h2 id="%D0%9F%D1%80%D0%B5%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#1055;&#1088;&#1077;&#1076;&#1086;&#1073;&#1088;&#1072;&#1073;&#1086;&#1090;&#1082;&#1072; &#1076;&#1072;&#1085;&#1085;&#1099;&#1093;<a class="anchor-link" href="#%D0%9F%D1%80%D0%B5%D0%B4%D0%BE%D0%B1%D1%80%D0%B0%D0%B1%D0%BE%D1%82%D0%BA%D0%B0-%D0%B4%D0%B0%D0%BD%D0%BD%D1%8B%D1%85">&#182;</a></h2><p>Необходимо исправить стиль в заголовках столбцов, исключить пропуски. Затем проверить данные на дубликаты.</p>
 
 </div>
 </div>
@@ -14916,8 +15004,7 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%D0%A1%D1%82%D0%B8%D0%BB%D1%8C-%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%BE%D0%B2">&#1057;&#1090;&#1080;&#1083;&#1100; &#1079;&#1072;&#1075;&#1086;&#1083;&#1086;&#1074;&#1082;&#1086;&#1074;<a class="anchor-link" href="#%D0%A1%D1%82%D0%B8%D0%BB%D1%8C-%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%BE%D0%B2">&#182;</a></h3><p><strong>Задание 6</strong></p>
-<p>Выведите на экран названия столбцов:</p>
+<h3 id="%D0%A1%D1%82%D0%B8%D0%BB%D1%8C-%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%BE%D0%B2">&#1057;&#1090;&#1080;&#1083;&#1100; &#1079;&#1072;&#1075;&#1086;&#1083;&#1086;&#1074;&#1082;&#1086;&#1074;<a class="anchor-link" href="#%D0%A1%D1%82%D0%B8%D0%BB%D1%8C-%D0%B7%D0%B0%D0%B3%D0%BE%D0%BB%D0%BE%D0%B2%D0%BA%D0%BE%D0%B2">&#182;</a></h3><p>Проверка названий столбцов:</p>
 
 </div>
 </div>
@@ -14927,7 +15014,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[5]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="c1"># перечень названий столбцов таблицы df</span>
@@ -14968,14 +15055,8 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 7</strong></p>
-<p>Приведите названия в соответствие с хорошим стилем:</p>
-<ul>
-<li>несколько слов в названии запишите в «змеином_регистре»,</li>
-<li>все символы сделайте строчными,</li>
-<li>устраните пробелы.</li>
-</ul>
-<p>Для этого переименуйте колонки так:</p>
+<p>Приведение названий в соответствие с общепринятым стилем:</p>
+<p>Для этого переименуем колонки:</p>
 <ul>
 <li><code>'  userID'</code> → <code>'user_id'</code>;</li>
 <li><code>'Track'</code> → <code>'track'</code>;</li>
@@ -14991,7 +15072,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[6]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">rename</span><span class="p">(</span><span class="n">columns</span> <span class="o">=</span> <span class="p">{</span><span class="s1">&#39;  userID&#39;</span> <span class="p">:</span> <span class="s1">&#39;user_id&#39;</span><span class="p">,</span> <span class="s1">&#39;Track&#39;</span> <span class="p">:</span> <span class="s1">&#39;track&#39;</span><span class="p">,</span> <span class="s1">&#39;  City  &#39;</span> <span class="p">:</span> <span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;Day&#39;</span> <span class="p">:</span> <span class="s1">&#39;day&#39;</span><span class="p">})</span>
@@ -15010,8 +15091,7 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 8</strong></p>
-<p>Проверьте результат. Для этого ещё раз выведите на экран названия столбцов:</p>
+<p>Проверка результата:</p>
 
 </div>
 </div>
@@ -15021,7 +15101,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[7]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">columns</span><span class="p">)</span> <span class="c1"># проверка результатов - перечень названий столбцов</span>
@@ -15062,8 +15142,7 @@ memory usage: 3.5+ MB
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%D0%9F%D1%80%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9">&#1055;&#1088;&#1086;&#1087;&#1091;&#1089;&#1082;&#1080; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1081;<a class="anchor-link" href="#%D0%9F%D1%80%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9">&#182;</a></h3><p><strong>Задание 9</strong></p>
-<p>Сначала посчитайте, сколько в таблице пропущенных значений. Для этого достаточно двух методов <code>pandas</code>:</p>
+<h3 id="%D0%9F%D1%80%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9">&#1055;&#1088;&#1086;&#1087;&#1091;&#1089;&#1082;&#1080; &#1079;&#1085;&#1072;&#1095;&#1077;&#1085;&#1080;&#1081;<a class="anchor-link" href="#%D0%9F%D1%80%D0%BE%D0%BF%D1%83%D1%81%D0%BA%D0%B8-%D0%B7%D0%BD%D0%B0%D1%87%D0%B5%D0%BD%D0%B8%D0%B9">&#182;</a></h3><p>Подсчет пропущенных значений:</p>
 
 </div>
 </div>
@@ -15073,7 +15152,7 @@ memory usage: 3.5+ MB
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[8]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># подсчёт пропусков</span>
@@ -15094,7 +15173,7 @@ memory usage: 3.5+ MB
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[9]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[8]:</div>
 
 
 
@@ -15123,8 +15202,9 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Не все пропущенные значения влияют на исследование. Так в <code>track</code> и <code>artist</code> пропуски не важны для вашей работы. Достаточно заменить их явными обозначениями.</p>
-<p>Но пропуски в <code>genre</code> могут помешать сравнению музыкальных вкусов в Москве и Санкт-Петербурге. На практике было бы правильно установить причину пропусков и восстановить данные. Такой возможности нет в учебном проекте. Придётся:</p>
+<p>Не все пропущенные значения влияют на исследование. Так в <code>track</code> и <code>artist</code> пропуски не важны для работы. Достаточно заменить их явными обозначениями.</p>
+<p>Но пропуски в <code>genre</code> могут помешать сравнению музыкальных вкусов в Москве и Санкт-Петербурге. На практике было бы правильно установить причину пропусков и восстановить данные. Такой возможности нет в учебном проекте. 
+Придётся:</p>
 <ul>
 <li>заполнить и эти пропуски явными обозначениями;</li>
 <li>оценить, насколько они повредят расчётам. </li>
@@ -15140,8 +15220,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 10</strong></p>
-<p>Замените пропущенные значения в столбцах <code>track</code>, <code>artist</code> и <code>genre</code> на строку <code>'unknown'</code>. Для этого создайте список <code>columns_to_replace</code>, переберите его элементы циклом <code>for</code> и для каждого столбца выполните замену пропущенных значений:</p>
+<p>Замена пропущенных значений в столбцах <code>track</code>, <code>artist</code> и <code>genre</code> на строку <code>'unknown'</code>:</p>
 
 </div>
 </div>
@@ -15151,7 +15230,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[9]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">columns_to_replace</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;track&#39;</span><span class="p">,</span> <span class="s1">&#39;artist&#39;</span><span class="p">,</span> <span class="s1">&#39;genre&#39;</span><span class="p">]</span>
@@ -15172,8 +15251,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 11</strong></p>
-<p>Убедитесь, что в таблице не осталось пропусков. Для этого ещё раз посчитайте пропущенные значения.</p>
+<p>Проверка осутствия пропущенных значений:</p>
 
 </div>
 </div>
@@ -15183,7 +15261,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[10]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">isna</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># подсчёт пропусков</span>
@@ -15204,7 +15282,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[10]:</div>
 
 
 
@@ -15233,8 +15311,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<h3 id="%D0%94%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D1%8B">&#1044;&#1091;&#1073;&#1083;&#1080;&#1082;&#1072;&#1090;&#1099;<a class="anchor-link" href="#%D0%94%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D1%8B">&#182;</a></h3><p><strong>Задание 12</strong></p>
-<p>Посчитайте явные дубликаты в таблице одной командой:</p>
+<h3 id="%D0%94%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D1%8B">&#1044;&#1091;&#1073;&#1083;&#1080;&#1082;&#1072;&#1090;&#1099;<a class="anchor-link" href="#%D0%94%D1%83%D0%B1%D0%BB%D0%B8%D0%BA%D0%B0%D1%82%D1%8B">&#182;</a></h3><p>Подсчет явных дубликатов:</p>
 
 </div>
 </div>
@@ -15244,7 +15321,7 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[11]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># подсчёт явных дубликатов</span>
@@ -15265,7 +15342,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[12]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[11]:</div>
 
 
 
@@ -15287,8 +15364,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 13</strong></p>
-<p>Вызовите специальный метод <code>pandas</code>, чтобы удалить явные дубликаты:</p>
+<p>Удаление явных дубликатов:</p>
 
 </div>
 </div>
@@ -15298,10 +15374,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[12]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span> <span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># удаление явных дубликатов</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_filtered</span><span class="o">=</span> <span class="n">df</span><span class="o">.</span><span class="n">drop_duplicates</span><span class="p">()</span><span class="o">.</span><span class="n">reset_index</span><span class="p">(</span><span class="n">drop</span><span class="o">=</span><span class="kc">True</span><span class="p">)</span> <span class="c1"># удаление явных дубликатов</span>
 </pre></div>
 
      </div>
@@ -15316,8 +15392,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 14</strong></p>
-<p>Ещё раз посчитайте явные дубликаты в таблице — убедитесь, что полностью от них избавились:</p>
+<p>Проверка:</p>
 
 </div>
 </div>
@@ -15327,10 +15402,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[13]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># проверка на отсутствие дубликатов</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_filtered</span><span class="o">.</span><span class="n">duplicated</span><span class="p">()</span><span class="o">.</span><span class="n">sum</span><span class="p">()</span> <span class="c1"># проверка на отсутствие дубликатов</span>
 </pre></div>
 
      </div>
@@ -15348,7 +15423,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[13]:</div>
 
 
 
@@ -15370,7 +15445,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Теперь избавьтесь от неявных дубликатов в колонке <code>genre</code>. Например, название одного и того же жанра может быть записано немного по-разному. Такие ошибки тоже повлияют на результат исследования.</p>
+<p>Теперь необходимо избавьться от неявных дубликатов в колонке <code>genre</code>. Например, название одного и того же жанра может быть записано немного по-разному. Такие ошибки тоже повлияют на результат исследования.</p>
 
 </div>
 </div>
@@ -15382,12 +15457,11 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 15</strong></p>
-<p>Выведите на экран список уникальных названий жанров, отсортированный в алфавитном порядке. Для этого:</p>
+<p>Вывод на экран списка уникальных названий жанров, отсортированный в алфавитном порядке. Для этого:</p>
 <ol>
-<li>извлеките нужный столбец датафрейма; </li>
-<li>примените к нему метод сортировки;</li>
-<li>для отсортированного столбца вызовите метод, который вернёт уникальные значения из столбца.</li>
+<li>извлекается нужный столбец датафрейма; </li>
+<li>к нему применяется метод сортировки;</li>
+<li>для отсортированного столбца вызывается метод, который возвращает уникальные значения из столбца.</li>
 </ol>
 
 </div>
@@ -15398,10 +15472,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[14]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># Просмотр уникальных названий жанров</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">()</span> <span class="c1"># Просмотр уникальных названий жанров</span>
 </pre></div>
 
      </div>
@@ -15419,7 +15493,7 @@ dtype: int64</pre>
 <div class="jp-OutputArea-child">
 
     
-    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[15]:</div>
+    <div class="jp-OutputPrompt jp-OutputArea-prompt">Out[14]:</div>
 
 
 
@@ -15492,15 +15566,9 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 16</strong></p>
-<p>Просмотрите список и найдите неявные дубликаты названия <code>hiphop</code>. Это могут быть названия с ошибками или альтернативные названия того же жанра.</p>
-<p>Вы увидите следующие неявные дубликаты:</p>
-<ul>
-<li><em>hip</em>,</li>
-<li><em>hop</em>,</li>
-<li><em>hip-hop</em>.</li>
-</ul>
-<p>Чтобы очистить от них таблицу используйте метод <code>replace()</code> с двумя аргументами: списком строк-дубликатов (включащий <em>hip</em>, <em>hop</em> и <em>hip-hop</em>) и строкой с правильным значением. Вам нужно исправить колонку <code>genre</code> в таблице <code>df</code>: заменить каждое значение из списка дубликатов на верное. Вместо <code>hip</code>, <code>hop</code> и <code>hip-hop</code> в таблице должно быть значение <code>hiphop</code>:</p>
+<p>В списке обнаружены неявные дубликаты названий <code>hiphop</code> и <code>electronic</code>, а также неизвестное значение <code>ïîï</code>. Это могут быть названия с ошибками или альтернативные названия того же жанра.</p>
+<p>Используется метод <code>replace()</code> для замены неверных значений в колонке <code>genre</code>.
+Также используется цикл по спискам неправильных имен, чтобы было возможно его пополнение или редактирование.</p>
 
 </div>
 </div>
@@ -15510,18 +15578,21 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[15]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span>                                                                      <span class="c1"># Устранение неявных дубликатов</span>
-<span class="k">def</span> <span class="nf">replace_wrong_values</span><span class="p">(</span><span class="n">wrong_values</span><span class="p">,</span> <span class="n">correct_value</span><span class="p">):</span>                <span class="c1"># на вход функции подаются список неправильных значений и строка с правильным значением</span>
-    <span class="k">for</span> <span class="n">wrong_value</span> <span class="ow">in</span> <span class="n">wrong_values</span><span class="p">:</span>                                  <span class="c1"># перебираем неправильные имена</span>
-        <span class="n">df</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">wrong_value</span><span class="p">,</span> <span class="n">correct_value</span><span class="p">)</span> <span class="c1"># и для каждого неправильного имени вызываем метод replace()</span>
+<span class="k">def</span> <span class="nf">replace_wrong_values</span><span class="p">(</span><span class="n">wrong_values</span><span class="p">,</span> <span class="n">correct_value</span><span class="p">):</span>                
+    <span class="k">for</span> <span class="n">wrong_value</span> <span class="ow">in</span> <span class="n">wrong_values</span><span class="p">:</span>                                  
+        <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span> <span class="o">=</span> <span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="n">wrong_value</span><span class="p">,</span> <span class="n">correct_value</span><span class="p">)</span> 
 
-<span class="n">duplicates</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hip&#39;</span><span class="p">,</span> <span class="s1">&#39;hip-hop&#39;</span><span class="p">,</span> <span class="s1">&#39;hop&#39;</span><span class="p">]</span>      <span class="c1"># список неправильных имён</span>
-<span class="n">name</span> <span class="o">=</span> <span class="s1">&#39;hiphop&#39;</span>                             <span class="c1"># правильное имя</span>
+<span class="n">duplicates</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;hip&#39;</span><span class="p">,</span> <span class="s1">&#39;hip-hop&#39;</span><span class="p">,</span> <span class="s1">&#39;hop&#39;</span><span class="p">],</span>                              <span class="c1"># список списков неправильных имён</span>
+              <span class="p">[</span><span class="s1">&#39;электроника&#39;</span><span class="p">],</span>
+              <span class="p">[</span><span class="s1">&#39;ïîï&#39;</span><span class="p">]]</span>
+<span class="n">name</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;hiphop&#39;</span><span class="p">,</span> <span class="s1">&#39;electronic&#39;</span><span class="p">,</span> <span class="s1">&#39;unknown&#39;</span> <span class="p">]</span>                           <span class="c1"># список правильных имен                         </span>
 
-<span class="n">replace_wrong_values</span><span class="p">(</span><span class="n">duplicates</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>      <span class="c1"># вызов функции replace_wrong_values</span>
+<span class="k">for</span> <span class="n">index</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">name</span><span class="p">)):</span>
+    <span class="n">replace_wrong_values</span><span class="p">(</span><span class="n">duplicates</span><span class="p">[</span><span class="n">index</span><span class="p">],</span> <span class="n">name</span><span class="p">[</span><span class="n">index</span><span class="p">])</span>              <span class="c1"># вызов функции replace_wrong_values </span>
 </pre></div>
 
      </div>
@@ -15536,14 +15607,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 17</strong></p>
-<p>Проверьте, что заменили неправильные названия:</p>
-<ul>
-<li>hip,</li>
-<li>hop,</li>
-<li>hip-hop.</li>
-</ul>
-<p>Выведите отсортированный список уникальных значений столбца <code>genre</code>:</p>
+<p>Проверка замены неправильных названий:</p>
 
 </div>
 </div>
@@ -15553,10 +15617,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[16]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span> <span class="c1"># датафрейм изменился, неявные дубликаты устранены </span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">sort_values</span><span class="p">()</span><span class="o">.</span><span class="n">unique</span><span class="p">())</span> <span class="c1"># датафрейм изменился, неявные дубликаты устранены </span>
 </pre></div>
 
      </div>
@@ -15618,8 +15682,7 @@ dtype: int64</pre>
  &#39;tango&#39; &#39;tanzorchester&#39; &#39;taraftar&#39; &#39;tatar&#39; &#39;tech&#39; &#39;techno&#39; &#39;teen&#39;
  &#39;thrash&#39; &#39;top&#39; &#39;traditional&#39; &#39;tradjazz&#39; &#39;trance&#39; &#39;tribal&#39; &#39;trip&#39;
  &#39;triphop&#39; &#39;tropical&#39; &#39;türk&#39; &#39;türkçe&#39; &#39;ukrrock&#39; &#39;unknown&#39; &#39;urban&#39; &#39;uzbek&#39;
- &#39;variété&#39; &#39;vi&#39; &#39;videogame&#39; &#39;vocal&#39; &#39;western&#39; &#39;world&#39; &#39;worldbeat&#39; &#39;ïîï&#39;
- &#39;электроника&#39;]
+ &#39;variété&#39; &#39;vi&#39; &#39;videogame&#39; &#39;vocal&#39; &#39;western&#39; &#39;world&#39; &#39;worldbeat&#39;]
 </pre>
 </div>
 </div>
@@ -15642,9 +15705,9 @@ dtype: int64</pre>
 <li>пропущенные значения,</li>
 <li>дубликаты — явные и неявные.</li>
 </ul>
-<p>Вы исправили заголовки, чтобы упростить работу с таблицей. Без дубликатов исследование станет более точным.</p>
-<p>Пропущенные значения вы заменили на <code>'unknown'</code>. Ещё предстоит увидеть, не повредят ли исследованию пропуски в колонке <code>genre</code>.</p>
-<p>Теперь можно перейти к проверке гипотез.</p>
+<p>Были исправилены заголовки, чтобы упростить работу с таблицей, удалены дубликаты для повышения точности исследования.</p>
+<p>Пропущенные значения заменены на <code>'unknown'</code>. Также предстоит проверить, не повредят ли исследованию пропуски в колонке <code>genre</code>.</p>
+<p>Далее проиводится проверка гипотез.</p>
 
 </div>
 </div>
@@ -15678,11 +15741,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Первая гипотеза утверждает, что пользователи по-разному слушают музыку в Москве и Санкт-Петербурге. Проверьте это предположение по данным о трёх днях недели — понедельнике, среде и пятнице. Для этого:</p>
-<ul>
-<li>Разделите пользователей Москвы и Санкт-Петербурга.</li>
-<li>Сравните, сколько треков послушала каждая группа пользователей в понедельник, среду и пятницу.</li>
-</ul>
+<p>Первая гипотеза утверждает, что пользователи по-разному слушают музыку в Москве и Санкт-Петербурге. Это предположение проверяется по данным о трёх днях недели — понедельнике, среде и пятнице:</p>
 
 </div>
 </div>
@@ -15694,9 +15753,7 @@ dtype: int64</pre>
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 18</strong></p>
-<p>Для тренировки сначала выполните каждый из расчётов по отдельности.</p>
-<p>Оцените активность пользователей в каждом городе. Сгруппируйте данные по городу и посчитайте прослушивания в каждой группе.</p>
+<p>Сначала группируются данные по городу и подсчитываются прослушивания в каждой группе.</p>
 
 </div>
 </div>
@@ -15706,10 +15763,10 @@ dtype: int64</pre>
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[17]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">)[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span> <span class="c1"># Подсчёт прослушиваний в каждом городе</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;city&#39;</span><span class="p">)[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span> <span class="c1"># Подсчёт прослушиваний в каждом городе</span>
 </pre></div>
 
      </div>
@@ -15751,8 +15808,7 @@ Name: user_id, dtype: int64
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
 <p>В Москве прослушиваний больше, чем в Петербурге. Из этого не следует, что московские пользователи чаще слушают музыку. Просто самих пользователей в Москве больше.</p>
-<p><strong>Задание 19</strong></p>
-<p>Теперь сгруппируйте данные по дню недели и посчитайте прослушивания в понедельник, среду и пятницу. Учтите, что в данных есть информация о прослушиваниях только за эти дни.</p>
+<p>Теперь данные группируются по дню недели и подсчитываются прослушивания в понедельник, среду и пятницу.</p>
 
 </div>
 </div>
@@ -15762,10 +15818,10 @@ Name: user_id, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[18]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;day&#39;</span><span class="p">)[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span> <span class="c1"># Подсчёт прослушиваний в каждый из трёх дней</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">df_filtered</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;day&#39;</span><span class="p">)[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">())</span> <span class="c1"># Подсчёт прослушиваний в каждый из трёх дней</span>
 </pre></div>
 
      </div>
@@ -15819,20 +15875,7 @@ Name: day, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 20</strong></p>
-<p>Вы видели, как работает группировка по городу и по дням недели. Теперь напишите функцию, которая объединит два эти расчёта.</p>
-<p>Создайте функцию <code>number_tracks()</code>, которая посчитает прослушивания для заданного дня и города. Ей понадобятся два параметра:</p>
-<ul>
-<li>день недели,</li>
-<li>название города.</li>
-</ul>
-<p>В функции сохраните в переменную строки исходной таблицы, у которых значение:</p>
-<ul>
-<li>в колонке <code>day</code> равно параметру <code>day</code>,</li>
-<li>в колонке <code>city</code> равно параметру <code>city</code>.</li>
-</ul>
-<p>Для этого примените последовательную фильтрацию с логической индексацией (или сложные логические выражения в одну строку, если вы уже знакомы с ними).</p>
-<p>Затем посчитайте значения в столбце <code>user_id</code> получившейся таблицы. Результат сохраните в новую переменную. Верните эту переменную из функции.</p>
+<p>Теперь необходимо объединить эти расчёты.</p>
 
 </div>
 </div>
@@ -15842,32 +15885,17 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[19]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">number_tracks</span><span class="p">(</span><span class="n">day</span><span class="p">,</span> <span class="n">city</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">number_tracks</span><span class="p">(</span><span class="n">day</span><span class="p">,</span> <span class="n">city</span><span class="p">):</span>                                  <span class="c1"># Функция для подсчёта прослушиваний для конкретного города и дня.</span>
     
-    <span class="n">track_list</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">day</span><span class="p">]</span>
+    <span class="n">track_list</span> <span class="o">=</span> <span class="n">df_filtered</span><span class="p">[</span><span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">day</span><span class="p">]</span>
     <span class="n">track_list</span> <span class="o">=</span> <span class="n">track_list</span><span class="p">[</span><span class="n">track_list</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">city</span><span class="p">]</span>
     
     <span class="n">track_list_count</span> <span class="o">=</span> <span class="n">track_list</span><span class="p">[</span><span class="s1">&#39;user_id&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span>
     
-    <span class="k">return</span> <span class="n">track_list_count</span>
-
-<span class="c1"># &lt;создание функции number_tracks()&gt;</span>
-<span class="c1"># Объявляется функция с двумя параметрами: day, city.</span>
-<span class="c1"># значение в столбце &#39;day&#39; равно параметру day и одновременно значение</span>
-<span class="c1"># в столбце &#39;city&#39; равно параметру city (используйте последовательную фильтрацию</span>
-<span class="c1"># с помощью логической индексации или сложные логические выражения в одну строку, если вы уже знакомы с ними).</span>
-<span class="c1"># В переменной track_list_count сохраняется число значений столбца &#39;user_id&#39;,</span>
-<span class="c1"># рассчитанное методом count() для таблицы track_list.</span>
-<span class="c1"># Функция возвращает число - значение track_list_count.</span>
-<span class="c1"># Функция для подсчёта прослушиваний для конкретного города и дня.</span>
-<span class="c1"># С помощью последовательной фильтрации с логической индексацией она </span>
-<span class="c1"># сначала получит из исходной таблицы строки с нужным днём,</span>
-<span class="c1"># затем из результата отфильтрует строки с нужным городом,</span>
-<span class="c1"># методом count() посчитает количество значений в колонке user_id. </span>
-<span class="c1"># Это количество функция вернёт в качестве результата</span>
+    <span class="k">return</span> <span class="n">track_list_count</span>                                    <span class="c1"># В переменной track_list_count сохраняется число значений столбца &#39;user_id&#39;, соответствующих заданных условиям.</span>
 </pre></div>
 
      </div>
@@ -15893,11 +15921,22 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[20]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">mon_msk</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Москве по понедельникам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mon_msk</span><span class="p">)</span>
+<span class="n">mon_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по понедельникам</span>
+<span class="n">wed_msk</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Москве по средам</span>
+<span class="n">wed_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по средам</span>
+<span class="n">fri_msk</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Москве по пятницам</span>
+<span class="n">fri_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по пятницам</span>
+
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в понедельник в Москве:&#39;</span><span class="p">,</span> <span class="n">mon_msk</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в понедельник в Санкт-Петербурге:&#39;</span><span class="p">,</span> <span class="n">mon_spb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в среду в Москве:&#39;</span><span class="p">,</span> <span class="n">wed_msk</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в среду в Санкт-Петербурге:&#39;</span><span class="p">,</span> <span class="n">wed_spb</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в пятницу в Москве:&#39;</span><span class="p">,</span> <span class="n">fri_msk</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Прослушивания в пятницу в Санкт-Петербурге:&#39;</span><span class="p">,</span> <span class="n">fri_spb</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -15919,207 +15958,12 @@ Name: day, dtype: int64
 
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>15740
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">mon_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по понедельникам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">mon_spb</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5614
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wed_msk</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Москве по средам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">wed_msk</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>11056
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">wed_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по средам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">wed_spb</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>7003
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fri_msk</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Москве по пятницам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fri_msk</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>15945
-</pre>
-</div>
-</div>
-
-</div>
-
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell   ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">fri_spb</span> <span class="o">=</span> <span class="n">number_tracks</span><span class="p">(</span><span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">)</span> <span class="c1"># количество прослушиваний в Санкт-Петербурге по пятницам</span>
-<span class="nb">print</span><span class="p">(</span><span class="n">fri_spb</span><span class="p">)</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-<div class="jp-Cell-outputWrapper">
-<div class="jp-Collapser jp-OutputCollapser jp-Cell-outputCollapser">
-</div>
-
-
-<div class="jp-OutputArea jp-Cell-outputArea">
-
-<div class="jp-OutputArea-child">
-
-    
-    <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
-
-
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>5895
+<pre>Прослушивания в понедельник в Москве: 15740
+Прослушивания в понедельник в Санкт-Петербурге: 5614
+Прослушивания в среду в Москве: 11056
+Прослушивания в среду в Санкт-Петербурге: 7003
+Прослушивания в пятницу в Москве: 15945
+Прослушивания в пятницу в Санкт-Петербурге: 5895
 </pre>
 </div>
 </div>
@@ -16135,11 +15979,10 @@ Name: day, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 22</strong></p>
-<p>Создайте c помощью конструктора <code>pd.DataFrame</code> таблицу, где</p>
+<p>Создание c помощью конструктора <code>pd.DataFrame</code> таблицы, где</p>
 <ul>
 <li>названия колонок — <code>['city', 'monday', 'wednesday', 'friday']</code>;</li>
-<li>данные — результаты, которые вы получили с помощью <code>number_tracks</code>.</li>
+<li>данные — результаты, полученные с помощью <code>number_tracks</code>.</li>
 </ul>
 
 </div>
@@ -16150,7 +15993,7 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[21]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">data</span> <span class="o">=</span> <span class="p">[[</span><span class="s1">&#39;Moscow&#39;</span><span class="p">,</span> <span class="n">mon_msk</span><span class="p">,</span> <span class="n">wed_msk</span><span class="p">,</span> <span class="n">fri_msk</span><span class="p">],</span>
@@ -16159,7 +16002,7 @@ Name: day, dtype: int64
 <span class="n">columns</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">,</span> <span class="s1">&#39;monday&#39;</span><span class="p">,</span> <span class="s1">&#39;wednesday&#39;</span><span class="p">,</span> <span class="s1">&#39;friday&#39;</span><span class="p">]</span> <span class="c1"># Список с названиями столбцов</span>
 <span class="n">city_by_day</span> <span class="o">=</span> <span class="n">pd</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">(</span><span class="n">data</span><span class="o">=</span><span class="n">data</span><span class="p">,</span> <span class="n">columns</span><span class="o">=</span><span class="n">columns</span><span class="p">)</span> <span class="c1"># Таблица с результатами</span>
 
-<span class="nb">print</span><span class="p">(</span><span class="n">city_by_day</span><span class="p">)</span>
+<span class="n">display</span><span class="p">(</span><span class="n">city_by_day</span><span class="p">)</span>
 </pre></div>
 
      </div>
@@ -16180,12 +16023,52 @@ Name: day, dtype: int64
     <div class="jp-OutputPrompt jp-OutputArea-prompt"></div>
 
 
-<div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
-<pre>               city  monday  wednesday  friday
-0            Moscow   15740      11056   15945
-1  Saint-Petersburg    5614       7003    5895
-</pre>
+
+<div class="jp-RenderedHTMLCommon jp-RenderedHTML jp-OutputArea-output " data-mime-type="text/html">
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>city</th>
+      <th>monday</th>
+      <th>wednesday</th>
+      <th>friday</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>Moscow</td>
+      <td>15740</td>
+      <td>11056</td>
+      <td>15945</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>Saint-Petersburg</td>
+      <td>5614</td>
+      <td>7003</td>
+      <td>5895</td>
+    </tr>
+  </tbody>
+</table>
 </div>
+</div>
+
 </div>
 
 </div>
@@ -16240,8 +16123,7 @@ Name: day, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 23</strong></p>
-<p>Сохраните таблицы с данными в две переменные:</p>
+<p>Таблицы с данными сохраняются в две переменные:</p>
 <ul>
 <li>по Москве — в <code>moscow_general</code>;</li>
 <li>по Санкт-Петербургу — в <code>spb_general</code>.</li>
@@ -16255,30 +16137,11 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[22]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">moscow_general</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Moscow&#39;</span><span class="p">]</span>   
-<span class="c1"># получение таблицы moscow_general из тех строк таблицы df, </span>
-<span class="c1"># для которых значение в столбце &#39;city&#39; равно &#39;Moscow&#39;</span>
-</pre></div>
-
-     </div>
-</div>
-</div>
-</div>
-
-</div><div class="jp-Cell jp-CodeCell jp-Notebook-cell jp-mod-noOutputs  ">
-<div class="jp-Cell-inputWrapper">
-<div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
-</div>
-<div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
-<div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
-     <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">spb_general</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">]</span>    
-<span class="c1"># получение таблицы spb_general из тех строк таблицы df,</span>
-<span class="c1"># для которых значение в столбце &#39;city&#39; равно &#39;Saint-Petersburg&#39;</span>
+<span class="n">spb_general</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;city&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="s1">&#39;Saint-Petersburg&#39;</span><span class="p">]</span>    
 </pre></div>
 
      </div>
@@ -16293,15 +16156,8 @@ Name: day, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 24</strong></p>
-<p>Создайте функцию <code>genre_weekday()</code> с четырьмя параметрами:</p>
-<ul>
-<li>таблица (датафрейм) с данными,</li>
-<li>день недели,</li>
-<li>начальная временная метка в формате 'hh:mm', </li>
-<li>последняя временная метка в формате 'hh:mm'.</li>
-</ul>
-<p>Функция должна вернуть информацию о топ-10 жанров тех треков, которые прослушивали в указанный день, в промежутке между двумя отметками времени.</p>
+<p>Выполняется оценка наиболее популярных жарвов в зависимости от города, дня недели и времени.
+Исследуются данные для утра понедельника и вечера пятницы.</p>
 
 </div>
 </div>
@@ -16311,37 +16167,19 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[23]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="c1">##### Объявление функции genre_weekday() с параметрами table, day, time1, time2,</span>
-<span class="c1"># которая возвращает информацию о самых популярных жанрах в указанный день в</span>
-<span class="c1"># заданное время:</span>
-<span class="c1"># 1) в переменную genre_df сохраняются те строки переданного датафрейма table, для</span>
-<span class="c1">#    которых одновременно:</span>
-<span class="c1">#    - значение в столбце day равно значению аргумента day</span>
-<span class="c1">#    - значение в столбце time больше значения аргумента time1</span>
-<span class="c1">#    - значение в столбце time меньше значения аргумента time2</span>
-<span class="c1">#    Используйте последовательную фильтрацию с помощью логической индексации.</span>
-<span class="c1"># 2) сгруппировать датафрейм genre_df по столбцу genre, взять один из его</span>
-<span class="c1">#    столбцов и посчитать методом count() количество записей для каждого из</span>
-<span class="c1">#    присутствующих жанров, получившийся Series записать в переменную</span>
-<span class="c1">#    genre_df_count</span>
-<span class="c1"># 3) отсортировать genre_df_count по убыванию встречаемости и сохранить</span>
-<span class="c1">#    в переменную genre_df_sorted</span>
-<span class="c1"># 4) вернуть Series из 10 первых значений genre_df_sorted, это будут топ-10</span>
-<span class="c1">#    популярных жанров (в указанный день, в заданное время)</span>
-
-<span class="k">def</span> <span class="nf">genre_weekday</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">):</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="k">def</span> <span class="nf">genre_weekday</span><span class="p">(</span><span class="n">df</span><span class="p">,</span> <span class="n">day</span><span class="p">,</span> <span class="n">time1</span><span class="p">,</span> <span class="n">time2</span><span class="p">):</span>
     
-    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">df</span><span class="p">[</span><span class="n">df</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">day</span><span class="p">]</span> <span class="c1"># оставляем в genre_df только те строки df, у которых день равен day</span>
-    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">genre_df</span><span class="p">[</span><span class="n">genre_df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">time2</span><span class="p">]</span> <span class="c1"># оставляем в genre_df только те строки genre_df, у которых время меньше time2</span>
-    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">genre_df</span><span class="p">[</span><span class="n">genre_df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">time1</span><span class="p">]</span> <span class="c1"># оставляем в genre_df только те строки genre_df, у которых время больше time1</span>
+    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">df_filtered</span><span class="p">[</span><span class="n">df_filtered</span><span class="p">[</span><span class="s1">&#39;day&#39;</span><span class="p">]</span> <span class="o">==</span> <span class="n">day</span><span class="p">]</span> 
+    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">genre_df</span><span class="p">[</span><span class="n">genre_df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">&lt;=</span> <span class="n">time2</span><span class="p">]</span> 
+    <span class="n">genre_df</span> <span class="o">=</span> <span class="n">genre_df</span><span class="p">[</span><span class="n">genre_df</span><span class="p">[</span><span class="s1">&#39;time&#39;</span><span class="p">]</span> <span class="o">&gt;=</span> <span class="n">time1</span><span class="p">]</span> 
     
-    <span class="n">genre_df_grouped</span> <span class="o">=</span> <span class="n">genre_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> <span class="c1"># сгруппируем отфильтрованный датафрейм по столбцу с названиями жанров, возьмём столбец genre и посчитаем кол-во строк для каждого жанра методом count()</span>
-    <span class="n">genre_df_sorted</span> <span class="o">=</span> <span class="n">genre_df_grouped</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  <span class="c1"># отсортируем результат по убыванию (чтобы в начале Series оказались самые популярные жанры)</span>
+    <span class="n">genre_df_grouped</span> <span class="o">=</span> <span class="n">genre_df</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span> 
+    <span class="n">genre_df_sorted</span> <span class="o">=</span> <span class="n">genre_df_grouped</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>  
     
-    <span class="k">return</span> <span class="n">genre_df_sorted</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span> <span class="c1"># вернём Series с 10 самыми популярными жанрами в указанный отрезок времени заданного дня</span>
+    <span class="k">return</span> <span class="n">genre_df_sorted</span><span class="p">[:</span><span class="mi">10</span><span class="p">]</span> 
 </pre></div>
 
      </div>
@@ -16356,8 +16194,7 @@ Name: day, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 25</strong></p>
-<p>Cравните результаты функции <code>genre_weekday()</code> для Москвы и Санкт-Петербурга в понедельник утром (с 7:00 до 11:00) и в пятницу вечером (с 17:00 до 23:00):</p>
+<p>Cравнение результатов функции <code>genre_weekday()</code> для Москвы и Санкт-Петербурга в понедельник утром (с 7:00 до 11:00) и в пятницу вечером (с 17:00 до 23:00):</p>
 
 </div>
 </div>
@@ -16367,13 +16204,10 @@ Name: day, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[24]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">moscow_general</span><span class="p">,</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;07:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:00&#39;</span><span class="p">))</span>
-<span class="c1"># вызов функции для утра понедельника в Москве (вместо df — таблица moscow_general)</span>
-<span class="c1"># объекты, хранящие время, являются строками и сравниваются как строки</span>
-<span class="c1"># пример вызова: genre_weekday(moscow_general, &#39;Monday&#39;, &#39;07:00&#39;, &#39;11:00&#39;)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">moscow_general</span><span class="p">,</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;07:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:00&#39;</span><span class="p">))</span> <span class="c1"># вызов функции для утра понедельника в Москве</span>
 </pre></div>
 
      </div>
@@ -16396,16 +16230,16 @@ Name: day, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            781
-dance          549
-electronic     480
-rock           474
-hiphop         286
-ruspop         186
-world          181
-rusrap         175
-alternative    164
-unknown        161
+pop            999
+dance          731
+rock           636
+electronic     627
+hiphop         366
+ruspop         250
+rusrap         230
+alternative    222
+world          217
+classical      197
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16420,11 +16254,10 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[32]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[25]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">spb_general</span><span class="p">,</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;07:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:00&#39;</span><span class="p">))</span>
-<span class="c1"># вызов функции для утра понедельника в Петербурге (вместо df — таблица spb_general)</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">spb_general</span><span class="p">,</span> <span class="s1">&#39;Monday&#39;</span><span class="p">,</span> <span class="s1">&#39;07:00&#39;</span><span class="p">,</span> <span class="s1">&#39;11:00&#39;</span><span class="p">))</span> <span class="c1"># вызов функции для утра понедельника в Петербурге</span>
 </pre></div>
 
      </div>
@@ -16447,16 +16280,16 @@ Name: genre, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            218
-dance          182
-rock           162
-electronic     147
-hiphop          80
-ruspop          64
-alternative     58
-rusrap          55
-jazz            44
-classical       40
+pop            999
+dance          731
+rock           636
+electronic     627
+hiphop         366
+ruspop         250
+rusrap         230
+alternative    222
+world          217
+classical      197
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16471,7 +16304,7 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[33]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[26]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">moscow_general</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;17:00&#39;</span><span class="p">,</span> <span class="s1">&#39;23:00&#39;</span><span class="p">))</span> <span class="c1"># вызов функции для вечера пятницы в Москве</span>
@@ -16497,16 +16330,16 @@ Name: genre, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            713
-rock           517
-dance          495
-electronic     482
-hiphop         273
-world          208
-ruspop         170
-alternative    163
-classical      163
-rusrap         142
+pop            969
+rock           733
+dance          705
+electronic     698
+hiphop         370
+world          262
+alternative    226
+classical      223
+ruspop         217
+rusrap         201
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16521,7 +16354,7 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[34]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[27]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">genre_weekday</span><span class="p">(</span><span class="n">spb_general</span><span class="p">,</span> <span class="s1">&#39;Friday&#39;</span><span class="p">,</span> <span class="s1">&#39;17:00&#39;</span><span class="p">,</span> <span class="s1">&#39;23:00&#39;</span><span class="p">))</span> <span class="c1"># вызов функции для вечера пятницы в Петербурге</span>
@@ -16547,16 +16380,16 @@ Name: genre, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            256
-electronic     216
-rock           216
-dance          210
-hiphop          97
-alternative     63
-jazz            61
-classical       60
-rusrap          59
-world           54
+pop            969
+rock           733
+dance          705
+electronic     698
+hiphop         370
+world          262
+alternative    226
+classical      223
+ruspop         217
+rusrap         201
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16611,8 +16444,7 @@ Name: genre, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 26</strong></p>
-<p>Сгруппируйте таблицу <code>moscow_general</code> по жанру и посчитайте прослушивания треков каждого жанра методом <code>count()</code>. Затем отсортируйте результат в порядке убывания и сохраните его в таблице <code>moscow_genres</code>.</p>
+<p>Осуществляется группировка таблицы <code>moscow_general</code> по жанру и подсчет прослушивания треков каждого жанра.</p>
 
 </div>
 </div>
@@ -16622,12 +16454,11 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[35]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[28]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="n">moscow_genres</span> <span class="o">=</span> <span class="n">moscow_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span><span class="c1"># одной строкой: группировка таблицы moscow_general по столбцу &#39;genre&#39;, </span>
-<span class="c1"># подсчёт числа значений &#39;genre&#39; в этой группировке методом count(), </span>
-<span class="c1"># сортировка получившегося Series в порядке убывания и сохранение в moscow_genres</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="n">moscow_genres</span> <span class="o">=</span> <span class="n">moscow_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
+<span class="c1"># группировка таблицы moscow_general по столбцу &#39;genre&#39;, подсчёт числа значений &#39;genre&#39;, сортировка в порядке убывания и сохранение в moscow_genres</span>
 </pre></div>
 
      </div>
@@ -16642,8 +16473,7 @@ Name: genre, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 27</strong></p>
-<p>Выведите на экран первые десять строк <code>moscow_genres</code>:</p>
+<p>Вывод на экран первых десяти строк <code>moscow_genres</code>:</p>
 
 </div>
 </div>
@@ -16653,10 +16483,10 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[36]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[29]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">moscow_genres</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span><span class="c1"># просмотр первых 10 строк moscow_genres</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">moscow_genres</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span> <span class="c1"># просмотр первых 10 строк moscow_genres</span>
 </pre></div>
 
      </div>
@@ -16679,16 +16509,16 @@ Name: genre, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            5892
-dance          4435
-rock           3965
-electronic     3786
-hiphop         2096
-classical      1616
-world          1432
-alternative    1379
-ruspop         1372
-rusrap         1161
+pop            6253
+dance          4707
+rock           4188
+electronic     4010
+hip            2156
+classical      1712
+world          1516
+alternative    1466
+ruspop         1453
+rusrap         1239
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16705,9 +16535,7 @@ Name: genre, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 28</strong></p>
-<p>Теперь повторите то же и для Петербурга.</p>
-<p>Сгруппируйте таблицу <code>spb_general</code> по жанру. Посчитайте прослушивания треков каждого жанра. Результат отсортируйте в порядке убывания и сохраните в таблице <code>spb_genres</code>:</p>
+<p>Та же операция повторяется и для Петербурга.</p>
 
 </div>
 </div>
@@ -16717,13 +16545,11 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[37]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[30]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="n">spb_genres</span> <span class="o">=</span> <span class="n">spb_general</span><span class="o">.</span><span class="n">groupby</span><span class="p">(</span><span class="s1">&#39;genre&#39;</span><span class="p">)[</span><span class="s1">&#39;genre&#39;</span><span class="p">]</span><span class="o">.</span><span class="n">count</span><span class="p">()</span><span class="o">.</span><span class="n">sort_values</span><span class="p">(</span><span class="n">ascending</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="c1"># одной строкой: группировка таблицы spb_general по столбцу &#39;genre&#39;, </span>
-<span class="c1"># подсчёт числа значений &#39;genre&#39; в этой группировке методом count(), </span>
-<span class="c1"># сортировка получившегося Series в порядке убывания и сохранение в spb_genres</span>
+<span class="c1"># группировка таблицы moscow_general по столбцу &#39;genre&#39;, подсчёт числа значений &#39;genre&#39;, сортировка в порядке убывания и сохранение в moscow_genres</span>
 </pre></div>
 
      </div>
@@ -16738,8 +16564,7 @@ Name: genre, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p><strong>Задание 29</strong></p>
-<p>Выведите на экран первые десять строк <code>spb_genres</code>:</p>
+<p>Вывод на экран первых десяти строк <code>spb_genres</code>:</p>
 
 </div>
 </div>
@@ -16749,10 +16574,10 @@ Name: genre, dtype: int64
 <div class="jp-Collapser jp-InputCollapser jp-Cell-inputCollapser">
 </div>
 <div class="jp-InputArea jp-Cell-inputArea">
-<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[39]:</div>
+<div class="jp-InputPrompt jp-InputArea-prompt">In&nbsp;[31]:</div>
 <div class="jp-CodeMirrorEditor jp-Editor jp-InputArea-editor" data-type="inline">
      <div class="CodeMirror cm-s-jupyter">
-<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">spb_genres</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span><span class="c1"># просмотр первых 10 строк spb_genres</span>
+<div class=" highlight hl-ipython3"><pre><span></span><span class="nb">print</span><span class="p">(</span><span class="n">spb_genres</span><span class="p">[:</span><span class="mi">10</span><span class="p">])</span> <span class="c1"># просмотр первых 10 строк spb_genres</span>
 </pre></div>
 
      </div>
@@ -16775,16 +16600,16 @@ Name: genre, dtype: int64
 
 <div class="jp-RenderedText jp-OutputArea-output" data-mime-type="text/plain">
 <pre>genre
-pop            2431
-dance          1932
-rock           1879
-electronic     1736
-hiphop          960
-alternative     649
-classical       646
-rusrap          564
-ruspop          538
-world           515
+pop            2597
+dance          2054
+rock           2004
+electronic     1842
+hip             992
+alternative     700
+classical       684
+rusrap          604
+ruspop          565
+world           553
 Name: genre, dtype: int64
 </pre>
 </div>
@@ -16840,7 +16665,7 @@ Name: genre, dtype: int64
 </div>
 <div class="jp-InputArea jp-Cell-inputArea"><div class="jp-InputPrompt jp-InputArea-prompt">
 </div><div class="jp-RenderedHTMLCommon jp-RenderedMarkdown jp-MarkdownOutput " data-mime-type="text/markdown">
-<p>Вы проверили три гипотезы и установили:</p>
+<p>Проверены три гипотезы и установлено:</p>
 <ol>
 <li>День недели по-разному влияет на активность пользователей в Москве и Петербурге. </li>
 </ol>
@@ -16857,10 +16682,9 @@ Name: genre, dtype: int64
 <li>Во вкусах пользователей Москвы и Петербурга больше общего чем различий. Вопреки ожиданиям, предпочтения жанров в Петербурге напоминают московские.</li>
 </ol>
 <p>Третья гипотеза не подтвердилась. Если различия в предпочтениях и существуют, на основной массе пользователей они незаметны.</p>
-<p><strong>На практике исследования содержат проверки статистических гипотез.</strong>
+<p><strong>Следует учитывать, что исследования содержат проверки статистических гипотез:</strong>
 Из данных одного сервиса не всегда можно сделать вывод о всех жителях города.
-Проверки статистических гипотез покажут, насколько они достоверны, исходя из имеющихся данных. 
-С методами проверок гипотез вы ещё познакомитесь в следующих темах.</p>
+Проверки статистических гипотез покажут, насколько они достоверны, исходя из имеющихся данных.</p>
 
 </div>
 </div>
